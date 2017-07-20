@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+a{
+  transition: 450ms all ease-out;
+  color: #fff;
+}
+a:hover,
+.shareMethods a:hover,
+.quotesContainer a:hover{
+  transition: 450ms all ease-in;
+  color: #e74c3c;
+}
+.btn:hover{
+  opacity: 0.7;
+  color: #fff;
+}
+header a:hover{
+  color: #2c3e50;
+}
+.quotesContainer a,
+footer a{
+  color: #3498DB;
+  font-style: italic;
+}
+
+
+header{
+  float: left;
+  width: 100%;
+  height: 100px;
+  background-color: #3498DB;
+}
+header a{
+  color: #fff;
+  font-size: 30px;
+  margin-top: 33px;
+  display: inline-block;
+}
+
+
+section{
+  float: left;
+  width: 100%;
+  height: 300px;
+}
+
+
+.quotesContainer{
+  width: calc(100% - 260px);
+  margin: 30px 100px 10px 100px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #2C3E50;
+}
+.quotesContainer p,
+.quotesContainer a{
+  color: #fff;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+}
+.quotesContainer p::before{
+  content: "“";
+  font-size: 30px;
+  padding-right: 10px;
+}
+.quotesContainer p::after{
+  content: "”";
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+
+.btnsContainer{
+  float: left;
+  width: calc(100% - 200px);
+  margin: 0 100px;
+}
+.generateBtn{
+  float: right;
+  text-align: right;
+}
+.shareBtn{
+  float: left;
+}
+.shareBtn:hover .shareMethods{
+  display: inline-block;
+}
+.generateBtn .btn{
+  background-color: #e74c3c;
+}
+.shareBtn .btn{
+  background-color: #3498DB;
+}
+.btn{
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+.shareMethods{
+  display: none;
+  background-color: #2c3e50;
+  text-align: center;
+  border-radius: 5px;
+}
+.shareMethods a{
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+
+footer{
+  float: left;
+  width: 100%;
+  height: 50px;
+  background-color: #2C3E50;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+footer p{
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}
